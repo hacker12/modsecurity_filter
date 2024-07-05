@@ -31,7 +31,7 @@ modsecurity_filter [options]
 -show_msg : Display the msg field (optional, default: false).
 -show_uri : Display the uri field (optional, default: false).
 -version: Display the version of the program.
-
+```
 
 ## Examples
 1 - Filter logs with IP prefix 192.168.:
