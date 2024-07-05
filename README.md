@@ -35,24 +35,30 @@ modsecurity_filter [options]
 
 ## Examples
 1 - Filter logs with IP prefix 192.168.:
-    ```sh
-    modsecurity_filter -ip_prefix 192.168.
-    ```
+
+```sh
+modsecurity_filter -ip_prefix 192.168.
+```
 
 2 - Use a different log file:
-    ```sh
-    modsecurity_filter -logfile /path/to/your/logfile.log -ip_prefix 192.168.
-    ```
+
+```sh
+modsecurity_filter -logfile /path/to/your/logfile.log -ip_prefix 192.168.
+```
 
 ## Output
 
 Without -show_msg and -show_uri:
 
+```yml
 IP: 192.168.242.48, ID: 942151
 IP: 192.168.242.48, ID: 932370
+```
 
 With -show_msg=true:
+
+```yml
 IP: 163.116.242.48, ID: 942151, MSG: SQL Injection Attack: SQL function name detected
 IP: 163.116.242.48, ID: 932370, MSG: Remote Command Execution: Windows Command Injection
-
+```
 
