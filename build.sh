@@ -1,6 +1,6 @@
 #!/bin/bash
 
-VERSION="1.0.0"
+VERSION="2.0.0"
 
 echo "Compiling for Windows (amd64)..."
 GOOS=windows GOARCH=amd64 go build -ldflags "-X main.Version=$VERSION" -o modsecurity_filter_windows_amd64.exe modsecurity_filter.go
